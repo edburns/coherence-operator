@@ -7,6 +7,9 @@ description: A Kubernetes Operator for Coherence
 apiVersion: v1
 version: ${project.version}
 appVersion: ${project.version}
+keywords:
+- operator
+- coherence
 home: https://github.com/oracle/coherence-operator
 sources:
 - https://github.com/oracle/coherence-operator
