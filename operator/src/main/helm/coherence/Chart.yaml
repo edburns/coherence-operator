@@ -8,6 +8,7 @@ apiVersion: v1
 keywords:
 - coherence
 version: ${project.version}
+kubeVersion: ">=1.10.11"
 appVersion: ${project.version}
 home: https://github.com/oracle/coherence-operator
 sources:
