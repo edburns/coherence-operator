@@ -709,7 +709,7 @@ Coherence with the following Helm invocation.
 $ helm --debug install --version 1.0.0-SNAPSHOT \
      ./coherence --name hello-example \
      --set userArtifacts.image=coherence-demo-app:1.0 \
-    *--set store.jmx.enabled=true* \
+     --set store.jmx.enabled=true \
      --set imagePullSecrets=sample-coherence-secret
 ```
 
