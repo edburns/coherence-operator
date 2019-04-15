@@ -116,6 +116,17 @@ about all aspects of using the operator including:
 Please refer to our [samples](docs/samples/README.md) for
 information about the available sample code.
 
+# Things to Keep In Mind for Existing Coherence Users
+
+* Software running in Kubernetes must provide "health checks" so that
+  Kubernetes can make informed decisions about starting, stopping, or
+  even killing, the containers running the software.  The operator
+  provides everything required to do this for Coherence.  Keep in mind
+  that these health checks cause frequent `MemberJoined` and
+  `MemberLeft` events to happen.  If these evnents refer to something
+  like `OracleCoherenceK8sPodChecker`, they are normal and be safely
+  ignored.
+
 <!--
 Need more help? Have a suggestion? Come and say "Hello!"
 
